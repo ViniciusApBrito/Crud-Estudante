@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EstudantesComponent } from './estudantes/estudantes.component';
+import { EstudanteFormComponent } from './estudante-form/estudante-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EstudantesComponent
+    EstudantesComponent,
+    EstudanteFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+<div class="bg-white mt-5 container rounded">
+    <div class="row">
+      <div class="display-8 ">
+        <h3 class="text-center mt-4">Crud de Estudante</h3>
+        <form [formGroup]="formGroupEstudante">
+  
+          <div class="mb-3 d-flex flex-column">
+            <label for="name" class="form-label text">Nome:</label>
+            <input type="text" formControlName="name" class="form-control" id="name" placeholder="Digite seu nome">
+            <div *ngIf="submitted && name.invalid">
+              <small class="text-danger">Nome inválido</small>
+            </div>
+          </div>
+  
+          <div class="mb-3 d-flex flex-column">
+            <label for="email" class="form-label text">Email:</label>
+            <input type="email" formControlName="email" class="form-control" id="email" placeholder="Digite seu email">
+            <div *ngIf="submitted && email.invalid">
+              <small class="text-danger">Email inválido</small>
+            </div>
+          </div>
+  
+          <div class="mb-3 d-flex flex-column">
+            <label for="location" class="form-label text">Endereço:</label>
+            <input type="text" formControlName="location" class="form-control" id="location"
+              placeholder="Digite seu endereço">
+            <div *ngIf="submitted && location.invalid">
+              <small class="text-danger">Endereço inválido</small>
+            </div>
+          </div>
+  
+          <div class="mb-3 d-flex flex-column">
+            <label for="cpf" class="form-label text">CPF:</label>
+            <input type="number" formControlName="cpf" class="form-control" id="cpf" placeholder="Digite seu CPF"
+              mask="000.000.000.00">
+            <div *ngIf="submitted && cpf.invalid">
+              <small class="text-danger">CPF inválido</small>
+            </div>
+          </div>
+  
+          <div class="text-center">
+            <button class="btn btn-primary m-3" (click)="save()">Salvar</button>
+            <button class="btn btn-danger" (click)="clean()">Limpar</button>
+          </div>
+  
+        </form>
+      </div>
+    </div>

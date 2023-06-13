@@ -6,6 +6,13 @@
       "email": "3123131@131231",
       "location": "3131312",
       "cpf": 8313131
+    },
+    {
+      "id": 2,
+      "name": "Vinicius 2",
+      "email": "vinicius.brito@gmail.com",
+      "location": "1234567890",
+      "cpf": 2321412412412412
     }
   ]
 }
